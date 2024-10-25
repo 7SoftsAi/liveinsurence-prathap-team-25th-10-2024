@@ -1,0 +1,63 @@
+<div class="testimonial-sec padding-top position-relative" id="testimonial-sec" style="display: flex; justify-content: center; align-items: center; min-height: 100vh; background-color: #f9f9f9;">
+    <div style="text-align: center; font-size: 48px; font-family: 'Roboto', sans-serif; margin-bottom: 20px;">
+        <h1>EMI CALCULATORS</h1>
+    </div>
+    <div class="calculator-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 1200px; width: 90%; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);">
+        
+        <!-- Future Value Calculator -->
+        <div class="calculator" style="width: 100%; max-width: 500px; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); box-sizing: border-box;">
+            <h2 style="text-align: center; margin-bottom: 20px; color: #333;">Future Value Calculator</h2>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="present-amount-future" style="display: block; margin-bottom: 5px; color: #555;">Present Amount (₹)</label>
+                <input type="number" id="present-amount-future" value="0" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="interest-rate-future" style="display: block; margin-bottom: 5px; color: #555;">Manual Rate (%)</label>
+                <input type="number" id="interest-rate-future" value="10" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="loan-period-future" style="display: block; margin-bottom: 5px; color: #555;">No. of Years</label>
+                <input type="number" id="loan-period-future" value="10" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="rest-option-future" style="display: block; margin-bottom: 5px; color: #555;">Compounding Mode</label>
+                <select id="rest-option-future" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    <option value="annually">Annually</option>
+                    <option value="half-yearly">Half-Yearly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="daily">Daily</option>
+                </select>
+            </div>
+            <button class="btn" onclick="calculateFutureValue()" style="width: 100%; padding: 12px; color: #fff; background-color: #28a745; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px;">Calculate Future Value</button>
+            <button class="btn" onclick="clearFields(3)" style="width: 100%; padding: 12px; color: #fff; background-color: #dc3545; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px;">Clear</button>
+            <div id="result-future" class="result" style="margin-top: 20px; padding: 15px; background-color: #f0f8ff; border: 1px solid #cce7ff; border-radius: 5px; text-align: center; font-size: 18px; color: #333;"></div>
+        </div>
+        
+        <!-- Fixed Deposit Calculator -->
+        <div class="calculator" style="width: 100%; max-width: 500px; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); box-sizing: border-box;">
+            <h2 style="text-align: center; margin-bottom: 20px; color: #333;">Fixed Deposit Calculator</h2>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="principal-amount" style="display: block; margin-bottom: 5px; color: #555;">Principal Amount (₹)</label>
+                <input type="number" id="principal-amount" value="100000" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="interest-rate-2" style="display: block; margin-bottom: 5px; color: #555;">Manual Rate (%)</label>
+                <input type="number" id="interest-rate-2" value="10" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+            </div>
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label for="compounding-option" style="display: block; margin-bottom: 5px; color: #555;">Compounding Option</label>
+                <select id="compounding-option" style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 5px;">
+                    <option value="annually">Annually</option>
+                    <option value="half-yearly">Half-Yearly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="daily">Daily</option>
+                </select>
+            </div>
+            <button class="btn" onclick="calculateFD()" style="width: 100%; padding: 12px; color: #fff; background-color: #28a745; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px;">Calculate Interest</button>
+            <button class="btn" onclick="clearFields(2)" style="width: 100%; padding: 12px; color: #fff; background-color: #dc3545; border: none; border-radius: 5px; cursor: pointer; font-size: 16px; margin-top: 10px;">Clear</button>
+            <div id="result-2" class="result" style="margin-top: 20px; padding: 15px; background-color: #f0f8ff; border: 1px solid #cce7ff; border-radius: 5px; text-align: center; font-size: 18px; color: #333;"></div>
+        </div>
+    </div>
+</div>

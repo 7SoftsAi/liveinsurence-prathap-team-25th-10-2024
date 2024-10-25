@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>LIC</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+
+    <!-- Favicon -->
+    <link href="img/icon/icon-02-primary.png" rel="icon" />
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Icon Font Stylesheet -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet" />
+
+    <style>
+      /* Hide the Sign Up and Login buttons on mobile view */
+      @media (max-width: 480px) {
+        .fox-cta-buttons {
+          display: none !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body style="margin: 0; font-family: Arial, sans-serif; background-color: #f4f4f4;">
+    <div id="sparrow-header" style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; background: linear-gradient(90deg, #1e3c72, #2a5298); box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1); color: #fff;">
+      <div class="eagle-header-content" style="display: flex; justify-content: space-between; align-items: center; width: 100%; padding: 3px 8px;">
+        <!-- Left Side: Icons -->
+        <div class="owl-header-cta" style="display: flex; align-items: center;">
+          <ul style="list-style: none; padding: 0; margin: 0; display: flex; gap: 15px; align-items: center;">
+            <li style="display: flex; align-items: center;">
+              <a href="mailto:info@sridevilic.com" style="display: block; font-size: 18px; color: #fff; text-decoration: none; transition: transform 0.3s ease;">
+                <i class="fa-solid fa-envelope" style="color: #ea4335;"></i>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <a href="https://www.justdial.com/" target="_blank" style="display: block; font-size: 18px; color: #fff; text-decoration: none; transition: transform 0.3s ease;">
+                <i class="fa-solid fa-globe" style="color: #ff6f00;"></i>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <a href="https://drive.google.com/" target="_blank" style="display: block; font-size: 18px; color: #fff; text-decoration: none; transition: transform 0.3s ease;">
+                <i class="fa-brands fa-google-drive" style="color: #0f9d58;"></i>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <a href="https://www.indiamart.com/" target="_blank" style="display: block; font-size: 18px; color: #fff; text-decoration: none; transition: transform 0.3s ease;">
+                <i class="fa-solid fa-store" style="color: #4285f4;"></i>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <a href="https://www.google.com/business/" target="_blank" style="display: block; font-size: 18px; color: #fff; text-decoration: none; transition: transform 0.3s ease;">
+                <i class="fa-solid fa-briefcase" style="color: #fbbc05;"></i>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <a href="https://www.google.com/maps/search/?api=1&query=Hare+Krishna%2C+Vizag%2C+Andhra+Pradesh+-530001+Visakhapatnam" target="_blank" style="display: block; font-size: 18px; color: #fff; text-decoration: none; transition: transform 0.3s ease;">
+                <i class="fa-solid fa-map-marker-alt" style="color: #ea4335;"></i>
+              </a>
+            </li>
+            <li style="display: flex; align-items: center;">
+              <a href="tel:002343474383" style="display: block; font-size: 18px; color: #fff; text-decoration: none; transition: transform 0.3s ease;">
+                <i class="fa-solid fa-phone" style="color: #34b7f1;"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right Side: Buttons -->
+        <div class="fox-cta-buttons" style="display: flex; gap: 10px; align-items: center;">
+          <a href="#" style="background-color: rgba(255, 255, 255, 0.8); color: #007bff; padding: 6px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">Sign Up</a>
+          <a href="#" style="background-color: rgba(255, 255, 255, 0.8); color: #28a745; padding: 6px 12px; border-radius: 20px; text-decoration: none; font-size: 12px; font-weight: bold; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease;">Login</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spinner Start -->
+    <div
+      id="spinner"
+      class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+    >
+      <div class="spinner-grow text-primary" role="status"></div>
+    </div>
+    <!-- Spinner End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar navbar-expand-lg bg-white navbar-light sticky-top px-4 px-lg-5"
+    >
+      <a href="index.html" class="navbar-brand d-flex align-items-center">
+        <h1 class="m-0">
+          <img
+            class="img-fluid me-3"
+            src="img/logo.png"
+            alt=""
+          />
+        </h1>
+      </a>
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto bg-light rounded pe-4 py-3 py-lg-0">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="about.html" class="nav-item nav-link">About Us</a>
+          <a href="service.html" class="nav-item nav-link">Our Services</a>
+          <a  href="gallery.html" class="nav-item nav-link">Gallery</a>
+          <a href="cal.html" class="nav-item nav-link">Calculator</a>
+          <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+    <br>
+    <!-- Navbar End -->
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Endowment Plans</title>
+    </head>
+    <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; background-color: #f4f4f4;">
+        <div style="max-width: 800px; margin: 50px auto; padding: 20px; background-color: #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+            <h1 style="text-align: center; color: #333;">Endowment Plans</h1>
+            <ol style="list-style-type: decimal; padding-left: 20px;">
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Definition:</strong> Endowment plans are life insurance policies that provide a combination of insurance coverage and savings. They pay out a lump sum upon maturity or death of the insured.
+                </li>
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Maturity Benefits:</strong> If the policyholder survives the policy term, a lump sum amount is paid out at maturity. This includes the sum assured along with any bonuses.
+                </li>
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Death Benefits:</strong> In case of the policyholder's death during the policy term, the nominee receives the death benefit, which is the sum assured plus any applicable bonuses.
+                </li>
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Premiums:</strong> Premiums for endowment plans are typically higher than term insurance because they include a savings component. Premiums can be paid monthly, quarterly, half-yearly, or annually.
+                </li>
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Bonuses:</strong> Bonuses are additional amounts added to the sum assured based on the insurer's performance. They can be reversionary bonuses (added annually) or terminal bonuses (paid at maturity or death).
+                </li>
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Savings Component:</strong> Endowment plans help in building a corpus for future financial needs, such as children's education, marriage, or retirement, by providing a disciplined savings mechanism.
+                </li>
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Tax Benefits:</strong> Premiums paid towards endowment plans are eligible for tax deductions under Section 80C of the Income Tax Act. The maturity proceeds are also tax-free under Section 10(10D).
+                </li>
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Loan Facility:</strong> Policyholders can avail loans against their endowment policy, providing financial flexibility in times of need without having to surrender the policy.
+                </li>
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Riders:</strong> Additional benefits or riders, such as critical illness or accidental death benefit, can be attached to endowment plans to enhance coverage.
+                </li>
+                <li style="margin-bottom: 15px; color: #555;">
+                    <strong style="color: #000;">Financial Security:</strong> Endowment plans offer financial security and peace of mind by combining the benefits of life insurance protection and savings, ensuring long-term financial stability.
+                </li>
+            </ol>
+            <a href="service.html" class="back-link">Back to Services</a>
+        </div>
+    </body>
+    </html>
+    
+    
+
+    
+
+   <!-- Footer Start -->
+    <br>
+    <div
+    class="container-fluid bg-dark footer mt-5 pt-5 wow fadeIn"
+    data-wow-delay="0.1s"
+  >
+    <div class="container py-5">
+      <div class="row g-5">
+        <div class="col-lg-3 col-md-6">
+          <h1 class="text-white mb-4">
+            <!-- <img
+              class="img-fluid me-3"
+              src="./new lic.png"
+              alt=""
+            /> -->
+          </h1>
+          <p>
+            "Dedicated to providing tailored insurance solutions with expertise and care. Sridevilic LIC ensures your financial security with personalized service and trusted advice."
+          </p>
+          <div class="d-flex pt-2">
+            <a class="btn btn-square me-1" href=""
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a class="btn btn-square me-1" href=""
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a class="btn btn-square me-1" href=""
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a class="btn btn-square me-0" href=""
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Address</h5>
+          <p>
+            <i class="fa fa-map-marker-alt me-3"></i>D. NO : 53-23-3/3/6 <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FLAT NO 401, <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; JSR RESIDENCY  <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SRI CHAITANYA NAGAR, <br>
+             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; VISAKHAPATNAM - 530013 <br>
+          </p>
+          <p><i class="fa fa-phone-alt me-3"></i>+91 99636 02173</p>
+          <p><i class="fa fa-envelope me-3"></i>info@sridevilic.com</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Quick Links</h5>
+          <a class="btn btn-link" href="about.html">About Us</a>
+          <a class="btn btn-link" href="contact.html">Contact Us</a>
+          <a class="btn btn-link" href="service.html">Our Services</a>
+          <a class="btn btn-link" href="./term.html">Terms & Condition</a>
+          <a class="btn btn-link" href="privacy.html">Privacy Policy</a>
+          <!-- <a class="btn btn-link" href="">Support</a> -->
+        </div>
+        <!-- <div class="col-lg-3 col-md-6">
+          <h5 class="text-light mb-4">Newsletter</h5>
+          <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+          <div class="position-relative mx-auto" style="max-width: 400px">
+            <input
+              class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
+              type="text"
+              placeholder="Your email"
+            />
+            <button
+              type="button"
+              class="btn btn-secondary py-2 position-absolute top-0 end-0 mt-2 me-2"
+            >
+              SignUp
+            </button>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <div class="container-fluid copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+            &copy; <a href="https://deltateam.in"> Deltateam.in</a> | <a href="https://greentickai.in/">Digital Marketing</a> | <a href="#" >Whatsapp CRM</a>
+          </div>
+          <!-- <div class="col-md-6 text-center text-md-end"> -->
+            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+            <!-- Designed By <a href="https://htmlcodex.com">HTML Codex</a>
+            <br />Distributed By:
+            <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer End -->
+
+  <!-- Back to Top -->
+  <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"
+    ><i class="bi bi-arrow-up"></i
+  ></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  
+
+  <!-- Template Javascript -->
+  <script src="js/main.js"></script>
+
+
+            
+  <div class="social-icons" style="display: flex; flex-direction: column; position: fixed; bottom: 85px; right: 35px; z-index: 100000000;" onclick="toggleSocialLinks()">
+    <div class="icon-wrapper" style="display: flex; flex-direction: column; align-items: center;">
+        <!-- Trigger Icon -->
+        <i class="fas fa-share-alt trigger-icon" style="color: #555; font-size: 40px; cursor: pointer;"></i>
+        <!-- Social Media Icons -->
+        <div class="social-links" style="display: none; flex-direction: column; align-items: center; margin-top: 10px;">
+            <a href="#" target="_blank" class="youtube" style="color: #FF0000; font-size: 35px;">
+                <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61561308044732" target="_blank" class="facebook" style="color: #1877F2; font-size: 35px; margin-top: 10px;">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" target="_blank" class="instagram" style="color: #E4405F; font-size: 35px; margin-top: 10px;">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=918887333777&text&type=phone_number&app_absent=0" target="_blank" class="whatsapp" style="color: #25D366; font-size: 35px; margin-top: 10px;">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            
+            <a href="#" target="_blank" class="twitter" style="color: #1DA1F2; font-size: 35px; margin-top: 10px;">
+    <i class="fab fa-twitter"></i>
+</a>
+
+<a href="https://t.me/@AtchutaVamsidharLIC" target="_blank" class="telegram" style="color: #0088cc; font-size: 35px; margin-top: 10px;">
+    <i class="fab fa-telegram"></i>
+</a>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function toggleSocialLinks() {
+        var socialLinks = document.querySelector('.social-links');
+        socialLinks.style.display = (socialLinks.style.display === 'none' ? 'flex' : 'none');
+    }
+</script>
+
+
+
+    <!-- Include Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+            
+
+        </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+
